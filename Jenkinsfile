@@ -12,8 +12,8 @@ pipeline{
         stage('Nexus') {
             steps{
                 script{
-                    def mavenPom = readMavenPom file: 'pom.xml'
-                    nexusArtifactUploader artifacts: [
+                 def mavenPom = readMavenPom file: 'pom.xml'
+                 nexusArtifactUploader artifacts: [
                     [   
                         artifactId: 'simple-app',
                         classifier: '', 
