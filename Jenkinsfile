@@ -14,7 +14,7 @@ pipeline{
                 script{
                  def mavenPom = readMavenPom file: 'pom.xml'
                  nexusArtifactUploader artifacts: [
-                    [   
+                     [   
                         artifactId: 'simple-app',
                         classifier: '', 
                         file: "target/simple-app-${mavenPom.version}.war", 
@@ -34,5 +34,3 @@ pipeline{
         }    
     }
 }
-
-
