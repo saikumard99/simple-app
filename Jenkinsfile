@@ -19,7 +19,7 @@ pipeline{
                     ], 
                     credentialsId: 'nexus-credentials',
                     groupId: 'in.javahome', 
-                    nexusUrl: '3.135.193.43', 
+                    nexusUrl: '3.135.193.43:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
                     repository: 'simple-app-repo', 
