@@ -9,7 +9,7 @@ pipeline{
                 sh script: 'mvn clean package'
             }
         }
-        stage('Nexus') {
+        stage('Artifact in Nexus ') {
             steps{
                 script{
                  def mavenPom = readMavenPom file:'pom.xml'
